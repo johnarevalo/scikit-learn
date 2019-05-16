@@ -197,7 +197,7 @@ class LatentDirichletAllocation(BaseEstimator, TransformerMixin):
         training at all. Evaluating perplexity can help you check convergence
         in training process, but it will also increase total training time.
         Evaluating perplexity in every iteration might increase training time
-        up to two-fold.
+        up to two-fold. `verbose` param should be > 0.
 
     total_samples : int, optional (default=1e6)
         Total number of documents. Only used in the `partial_fit` method.
